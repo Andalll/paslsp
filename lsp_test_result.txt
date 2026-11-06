@@ -1,0 +1,511 @@
+LSP: paslsp
+
+Diagnostics: 0
+
+=== HOVER on 'add' ===
+{
+  contents = {
+    kind = "plaintext",
+    value = "Procedure/Function `add` (declared line 8, col 1)"
+  }
+}
+
+=== HOVER on 'x' ===
+{
+  contents = {
+    kind = "plaintext",
+    value = "Variable `x`: type `integer` (declared line 4, col 5)"
+  }
+}
+
+=== HOVER on 'add' mid-word ===
+{
+  contents = {
+    kind = "plaintext",
+    value = "Procedure/Function `add` (declared line 8, col 1)"
+  }
+}
+
+=== DEFINITION on 'add' call ===
+{
+  range = {
+    ["end"] = {
+      character = 3,
+      line = 7
+    },
+    start = {
+      character = 0,
+      line = 7
+    }
+  },
+  uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+}
+
+=== REFERENCES on 'x' ===
+{ {
+    range = {
+      ["end"] = {
+        character = 5,
+        line = 3
+      },
+      start = {
+        character = 4,
+        line = 3
+      }
+    },
+    uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+  }, {
+    range = {
+      ["end"] = {
+        character = 5,
+        line = 3
+      },
+      start = {
+        character = 4,
+        line = 3
+      }
+    },
+    uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+  }, {
+    range = {
+      ["end"] = {
+        character = 5,
+        line = 8
+      },
+      start = {
+        character = 4,
+        line = 8
+      }
+    },
+    uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+  }, {
+    range = {
+      ["end"] = {
+        character = 5,
+        line = 17
+      },
+      start = {
+        character = 4,
+        line = 17
+      }
+    },
+    uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+  }, {
+    range = {
+      ["end"] = {
+        character = 9,
+        line = 19
+      },
+      start = {
+        character = 8,
+        line = 19
+      }
+    },
+    uri = "file:///data/data/com.termux/files/home/storage/projects/PasLsp/test_full.pas"
+  } }
+
+=== DOCUMENT SYMBOLS ===
+{ {
+    detail = "variable: integer",
+    kind = 13,
+    name = "x",
+    range = {
+      ["end"] = {
+        character = 5,
+        line = 3
+      },
+      start = {
+        character = 4,
+        line = 3
+      }
+    },
+    selectionRange = {
+      ["end"] = {
+        character = 5,
+        line = 3
+      },
+      start = {
+        character = 4,
+        line = 3
+      }
+    }
+  }, {
+    detail = "variable: string",
+    kind = 13,
+    name = "msg",
+    range = {
+      ["end"] = {
+        character = 7,
+        line = 4
+      },
+      start = {
+        character = 4,
+        line = 4
+      }
+    },
+    selectionRange = {
+      ["end"] = {
+        character = 7,
+        line = 4
+      },
+      start = {
+        character = 4,
+        line = 4
+      }
+    }
+  }, {
+    detail = "variable: integer",
+    kind = 13,
+    name = "y",
+    range = {
+      ["end"] = {
+        character = 8,
+        line = 3
+      },
+      start = {
+        character = 7,
+        line = 3
+      }
+    },
+    selectionRange = {
+      ["end"] = {
+        character = 8,
+        line = 3
+      },
+      start = {
+        character = 7,
+        line = 3
+      }
+    }
+  }, {
+    detail = "procedure/function",
+    kind = 12,
+    name = "double",
+    range = {
+      ["end"] = {
+        character = 6,
+        line = 12
+      },
+      start = {
+        character = 0,
+        line = 12
+      }
+    },
+    selectionRange = {
+      ["end"] = {
+        character = 6,
+        line = 12
+      },
+      start = {
+        character = 0,
+        line = 12
+      }
+    }
+  }, {
+    detail = "procedure/function",
+    kind = 12,
+    name = "add",
+    range = {
+      ["end"] = {
+        character = 3,
+        line = 7
+      },
+      start = {
+        character = 0,
+        line = 7
+      }
+    },
+    selectionRange = {
+      ["end"] = {
+        character = 3,
+        line = 7
+      },
+      start = {
+        character = 0,
+        line = 7
+      }
+    }
+  } }
+
+=== COMPLETION ===
+{
+  isIncomplete = false,
+  items = { {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "absolute"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "and"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "array"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "as"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "asm"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "case"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "const"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "constructor"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "destructor"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "div"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "do"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "downto"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "else"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "end"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "except"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "exports"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "file"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "finalization"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "finally"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "for"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "function"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "goto"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "if"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "implementation"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "in"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "inherited"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "inline"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "interface"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "is"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "label"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "library"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "mod"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "nil"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "not"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "object"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "of"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "only"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "operator"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "or"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "otherwise"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "packed"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "procedure"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "program"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "record"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "reintroduce"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "repeat"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "resident"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "self"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "set"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "shl"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "shr"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "string"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "then"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "to"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "type"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "unit"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "until"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "uses"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "var"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "virtual"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "while"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "with"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "xor"
+    }, {
+      detail = "Pascal keyword",
+      kind = 14,
+      label = "begin"
+    }, {
+      detail = "variable: integer",
+      kind = 6,
+      label = "x"
+    }, {
+      detail = "variable: string",
+      kind = 6,
+      label = "msg"
+    }, {
+      detail = "variable: integer",
+      kind = 6,
+      label = "y"
+    }, {
+      detail = "procedure/function",
+      kind = 3,
+      label = "double"
+    }, {
+      detail = "procedure/function",
+      kind = 3,
+      label = "add"
+    } }
+}
+
