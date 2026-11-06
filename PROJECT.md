@@ -162,8 +162,8 @@ Hanya `.` yang diatur sebagai trigger. Bisa ditambahkan trigger untuk huruf atau
 
 ## Rencana sesi berikutnya (prioritas)
 
-1. **Perbaiki `check_pascal`** agar `end;` dan `end.` terdeteksi (hapus false positive di `biodata.pas`).
-2. **Deduplikasi referensi** di `references`.
+1. ✅ **Perbaiki `check_pascal`** agar `end;` dan `end.` terdeteksi (hapus false positive di `biodata.pas`) — selesai.
+2. ✅ **Deduplikasi referensi** di `references` — selesai.
 3. **Uji kembali** di NeoVim dengan file `biodata.pas` dan `test_full.pas`.
 4. **Publish ke Termux package repository** (termasih opsi, fase terakhir): buat `build.sh`, daftar di `termux/packages`, ajukan PR.
 

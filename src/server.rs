@@ -270,6 +270,13 @@ impl LanguageServer for Backend {
             }
         }
 
+        locations.sort_by_key(|loc| (loc.uri.clone(), loc.range.start.line, loc.range.start.character));
+        locations.dedup_by(|a, b| {
+            a.uri == b.uri
+                && a.range.start.line == b.range.start.line
+                && a.range.start.character == b.range.start.character
+        });
+
         Ok(Some(locations))
     }
 
@@ -352,10 +359,14 @@ fn check_pascal(text: &str) -> Vec<Diagnostic> {
     for (i, line) in text.lines().enumerate() {
         let trimmed = line.trim();
 
-        if trimmed == "begin" {
+        if trimmed == "begin" || trimmed.starts_with("begin ") {
             begin_count += 1;
         }
-        if trimmed == "end" {
+        if trimmed == "end"
+            || trimmed.starts_with("end;")
+            || trimmed.starts_with("end.")
+            || trimmed.starts_with("end ")
+        {
             end_count += 1;
         }
 
